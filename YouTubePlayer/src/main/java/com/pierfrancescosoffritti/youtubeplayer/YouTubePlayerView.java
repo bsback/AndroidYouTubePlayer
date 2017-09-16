@@ -47,7 +47,7 @@ public class YouTubePlayerView extends FrameLayout implements NetworkReceiver.Ne
         youTubePlayer = new YouTubePlayer(context);
         addView(youTubePlayer, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-        playerControls = inflate(context, R.layout.player_controls, this);
+        playerControls = inflate(context, R.layout.player_controls_custom, this);
         playerControlsWrapper = new PlayerControlsWrapper(this, playerControls);
 
         playbackResumer = new PlaybackResumer(this);
